@@ -4,10 +4,10 @@ export function Menu(){
     return(
         <>
             <nav>
-                <Link to={'/'}>Home</Link>
-                <Link to={'/biography'}>Biography</Link>
-                <Link to={'/painting'}>Painting</Link>
-                <Link to={'/paintinglist'}>List Painting</Link>
+                <Link to={'/'}>Головна</Link>
+                <Link to={'/biography'}>Біографія</Link>
+                <Link to={'/painting'}>Найвідоміша картина</Link>
+                <Link to={'/paintinglist'}>Колекція картин</Link>
             </nav>
         </>
     );

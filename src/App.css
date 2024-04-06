@@ -14,7 +14,7 @@ main{
 
 nav a{
     display: inline-block;
-    background-color: aquamarine;
+    background-color: #ffde6d;
     border-radius: 5px;
     margin: 6px;
     padding: 10px;
@@ -22,6 +22,23 @@ nav a{
 }
 
 nav a:hover{
-    background-color: darkturquoise;
+    background-color:  #ff6d52;
     cursor: pointer;
 }
+
+.home img{
+    height: 40%;
+    width: 40%;
+}
+
+.container-biography{
+    display: flex;
+    margin-top: 30px;
+    text-align: left;
+    padding: 10px;
+}
+
+.container-biography p{
+   margin-left: 20px;
+}
+
