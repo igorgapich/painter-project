@@ -7,6 +7,8 @@ import PaintingList from "./components/painter/PaintingList";
 import {Menu} from "./components/Menu";
 import PaintingLayout from "./components/painter/PaintingLayout";
 import Paint from "./components/painter/Paint"
+import NewPaint from "./components/painter/NewPaint";
+import EditPaint from "./components/painter/EditPaint";
 
 function App() {
     return (
@@ -23,6 +25,8 @@ function App() {
                 <Route path="/paintinglist" element={<PaintingLayout/>}>
                     <Route index element={<PaintingList/>}/>
                     <Route path=":id" element={<Paint/>}/>
+                    <Route path="newpaint" element={<NewPaint/>}/>
+                    <Route path="edit/:id" element={<EditPaint/>}/>
                     {/*<Route index element={<PaintingList/>}/>*/}
                     {/*<Route index element={<PaintingList/>}/>*/}
 

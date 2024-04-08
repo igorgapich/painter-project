@@ -1,7 +1,8 @@
 import {Outlet} from "react-router-dom";
+import {useState} from "react";
 
 const PaintingLayout = () => {
-    const paintings =[
+    const paintsArray =[
         {
             id:1,
             title: "Таємна вечеря",
@@ -27,9 +28,10 @@ const PaintingLayout = () => {
             image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Possible_Self-Portrait_of_Leonardo_da_Vinci.jpg"
         }
     ];
+    const[paints,setPaints] = useState(paintsArray);
     return(
         <>
-            <Outlet context={paintings}/>
+            <Outlet context={[paints,setPaints]}/>
         </>
     );
 }
