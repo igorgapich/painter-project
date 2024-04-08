@@ -6,6 +6,7 @@ const PaintingList = () => {
     return(
         <>
             <h1>Колекція Картин</h1>
+            <div className="list-container">
             <ul>
                 {painting.map((p)=>(
                     <li key={p.id}>
@@ -13,6 +14,7 @@ const PaintingList = () => {
                     </li>
                 ))}
             </ul>
+            </div>
         </>
     );
 }

@@ -3,11 +3,13 @@ header{
     box-shadow: 0 0 8px gray;
     padding: 10px;
     text-align: center;
+    height: 120px;
 }
 
 main{
     background-color: #ffd486;
     width: 100%;
+    height: 813px;
     margin: auto;
     text-align: center;
 }
@@ -42,3 +44,31 @@ nav a:hover{
    margin-left: 20px;
 }
 
+.list-container{
+    display: flex;
+    justify-content: center;
+}
+
+.list-container ul{
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.list-container li{
+    background-color: peru;
+    border: solid black 1px;
+    border-radius: 10px;
+    margin: 50px;
+    padding-top: 25px;
+    height: 50px;
+    width: 250px;
+}
+
+.list-container li:hover{
+    background-color: #ffde6d;
+}
+
+.list-container a {
+    text-decoration: none;
+    display: inline-block;
+}
